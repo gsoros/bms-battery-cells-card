@@ -220,7 +220,7 @@ class BmsBatteryCellsCardEditor extends LitElement {
                 <div class="row"><span>${this._localize('editor.show_cell_voltages')}</span><ha-switch .checked=${this._config.show_values !== false} .configValue=${'show_values'} @change=${this._valueChanged}></ha-switch></div>
                 <div class="row"><span>${this._localize('editor.show_min_max')}</span><ha-switch .checked=${this._config.show_min_max !== false} .configValue=${'show_min_max'} @change=${this._valueChanged}></ha-switch></div>
                 <div class="row"><span>${this._localize('editor.show_average')}</span><ha-switch .checked=${this._config.show_average || false} .configValue=${'show_average'} @change=${this._valueChanged}></ha-switch></div>
-                <div class="row"><span>${this._localize('editor.calc_drift')}</span><ha-switch .checked=${this._config.show_voltage_diff || false} .configValue=${'show_voltage_diff'} @change=${this._valueChanged}></ha-switch></div>
+                <div class="row"><span>${this._localize('editor.calc_delta')}</span><ha-switch .checked=${this._config.show_voltage_diff || false} .configValue=${'show_voltage_diff'} @change=${this._valueChanged}></ha-switch></div>
             ` : ''}
         </div>
 
@@ -230,7 +230,7 @@ class BmsBatteryCellsCardEditor extends LitElement {
             ${this._renderEntitySelector('editor.power', 'watt_entity', sensorSelector)}
             ${this._renderEntitySelector('editor.voltage', 'total_voltage_entity', sensorSelector)}
             ${this._renderEntitySelector('editor.current', 'total_current_entity', sensorSelector)}
-            ${this._renderEntitySelector('editor.drift', 'cell_diff_sensor', sensorSelector)}
+            ${this._renderEntitySelector('editor.delta', 'cell_diff_sensor', sensorSelector)}
             ${this._renderEntitySelector('editor.temp', 'temp_entity', sensorSelector)}
         
             ${this._config.show_detailed_view ? html`
