@@ -49,7 +49,7 @@ export default {
     },
     card: {
         power: "Leistung",
-        soc: "SoC",
+        soc: "Batteriestand",
         temp: "Temp",
         drift: "Drift",
         avg_cell: "Ø Zelle",
