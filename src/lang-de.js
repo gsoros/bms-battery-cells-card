@@ -55,7 +55,7 @@ export default {
     },
     card: {
         power: "Leistung",
-        soc: "SoC",
+        soc: "Batteriestand",
         temp: "Temp",
         delta: "Delta",
         avg_cell: "Ø Zelle",
