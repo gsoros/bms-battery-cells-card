@@ -319,13 +319,6 @@ class BmsBatteryCellsCardEditor extends LitElement {
 
 customElements.define("bms-battery-cells-card-editor", BmsBatteryCellsCardEditor);
 
-		
-	} (chart_umd_min$1));
-	return chart_umd_min$1.exports;
-}
-
-requireChart_umd_min();
-
 console.log(
   "%c🔋 BMS Battery Cells Card v_1.8 loaded",
   "background: #2ecc71; color: #000; padding: 2px 6px; border-radius: 4px; font-weight: bold;"
